@@ -1,0 +1,16 @@
+(executable
+ (name coqinit)
+ (modules coqinit coqinit_sites)
+ (public_name coqinit)
+ (libraries dune-site))
+
+(install
+ (section
+  (site
+   (coqinit data)))
+ (files
+  (template_make.txt as template_make.txt)))
+
+(generate_sites_module
+ (module coqinit_sites)
+ (sites coqinit))
