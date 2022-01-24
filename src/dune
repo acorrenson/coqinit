@@ -1,0 +1,3 @@
+(library
+ (name CoqInit)
+ (public_name CoqInit))

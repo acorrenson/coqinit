@@ -2,12 +2,12 @@
 
 (using dune_site 0.1)
 
-(name coqinit)
+(name CoqInit)
 
 (generate_opam_files true)
 
 (package
- (name coqinit)
+ (name CoqInit)
  (synopsis "A cli tool to generate new coq projects")
  (sites
   (share data)))
