@@ -1,8 +1,8 @@
 (executable
- (name main)
- (modules main coqinit_sites)
+ (name coqinit)
  (public_name coqinit)
- (libraries CoqInit dune-site))
+ (modules coqinit coqinit_sites)
+ (libraries coqinit.lib dune-site))
 
 (install
  (section
@@ -13,4 +13,4 @@
 
 (generate_sites_module
  (module coqinit_sites)
- (sites CoqInit))
+ (sites coqinit))

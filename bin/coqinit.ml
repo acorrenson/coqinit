@@ -1,7 +1,7 @@
-open CoqInit.System
+open Lib.System
 open Coqinit_sites
 
-let main =
+let () =
   let makefile = Filename.concat (List.hd Sites.data) "_Makefile" in
   let proj = "_CoqProject" in
   touch proj;
